@@ -55,15 +55,15 @@
         <div style=" width:100%;height:auto;margin-left: 1%;margin-left: 4%;"><br>
         <p style=""><font face="Arial Narrow" size="5">Get to Know PayJnu</font></p>
         <nav style="margin-left:1.3%">
-        <a href="#" style="color:#336699">How PayJnu Works</a><font color="#336699"><br><br>
+        <a href="HowWork.jsp" style="color:#336699">How PayJnu Works</a><font color="#336699"><br><br>
         </font>
-        <a href="#" style="color:#336699">Getting Started</a><font color="#336699"><br><br>
+        <a href="GettingStarted.jsp" style="color:#336699">Getting Started</a><font color="#336699"><br><br>
         </font>
         <a href="#" style="color:#336699">Managing Your Account</a><font color="#336699"><br><br>
         </font>
         <a href="#" style="color:#336699">GreatWays to Use PayJnu</a><font color="#336699"><br><br>
         </font>
-        <a href="#" style="color:#336699">Top 10 Things to Know about PayJnu</a>
+        <a href="Top10.jsp" style="color:#336699">Top 10 Things to Know about PayJnu</a>
         </nav><br>
         </div>         
         

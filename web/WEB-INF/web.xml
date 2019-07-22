@@ -44,6 +44,14 @@
         <servlet-name>CRefund</servlet-name>
         <servlet-class>kuldeep.CRefund</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CustSignUp</servlet-name>
+        <servlet-class>kuldeep.CustSignUp</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CSignUp</servlet-name>
+        <servlet-class>kuldeep.CSignUp</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>logout</servlet-name>
         <url-pattern>/logout</url-pattern>
@@ -87,6 +95,14 @@
     <servlet-mapping>
         <servlet-name>CRefund</servlet-name>
         <url-pattern>/CRefund</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustSignUp</servlet-name>
+        <url-pattern>/CustSignUp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CSignUp</servlet-name>
+        <url-pattern>/CSignUp</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

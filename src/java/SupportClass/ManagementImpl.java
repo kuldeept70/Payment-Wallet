@@ -120,14 +120,27 @@ public class ManagementImpl {
        else
            return(-3);
     }
+    */
     public int openAccount(UserDetails u){
         try{
         Connection conn=new Connect().getConnection();
         Statement stmt=conn.createStatement();
-        stmt.executeUpdate("Insert INTO USERDETAIL(acc,name,current_bal,dob,mob,address,aadhar,email) Values("+u.acc+",'"+u.name+"',"+u.balance+",'"+u.dob+"','"+u.mno+"','"+u.add+"','"+u.uid+"','"+u.email+"')");
+        stmt.executeUpdate("Insert INTO USER_PRO(UNAME,NAME,MOB_NO,ADDRESS,DOB,EMAIL,BALANCE) Values('"+u.uid+"','"+u.name+"','"+u.mno+"','"+u.add+"','"+u.dob+"','"+u.email+"','"+u.balance+"')");
+        stmt.executeUpdate("Insert INTO USER_AUTH(UNAME,PWD) Values('"+u.uid+"','"+u.password+"')");
         }catch(Exception e){System.out.println("openAccount error "+e);return 0;}
         return(1);
     }
+    public int CopenAccount(UserDetails u){
+        // in this program type is stored in dob exceptionaly.
+        try{
+        Connection conn=new Connect().getConnection();
+        Statement stmt=conn.createStatement();
+        stmt.executeUpdate("Insert INTO ORG_PRO(UNAME,NAME,MOB_NO,ADDRESS,TYPE,EMAIL,BALANCE) Values('"+u.uid+"','"+u.name+"','"+u.mno+"','"+u.add+"','"+u.dob+"','"+u.email+"','"+u.balance+"')");
+        stmt.executeUpdate("Insert INTO USER_AUTH(UNAME,PWD) Values('"+u.uid+"','"+u.password+"')");
+        }catch(Exception e){System.out.println("openAccount error "+e);return 0;}
+        return(1);
+    }
+    /*
     public int withdraw(String mno,int amt,String date){
         int temp=Withdraw.withdraw(mno, amt, date);
         if((temp!=-1)&&(temp!=-2)){
@@ -146,7 +159,7 @@ public class ManagementImpl {
         else
             return(temp);
     }
-*/
+    */
     public int moneyTransfer (UserDetails user,String r_mno,int amt,String date){
         if(user.mno.equals(r_mno)){
             return(-1);
