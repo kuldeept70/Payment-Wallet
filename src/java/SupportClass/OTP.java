@@ -21,7 +21,7 @@ public class OTP {
             URL obj = new URL("https://www.fast2sms.com/dev/bulk");
             HttpURLConnection postConnection = (HttpURLConnection) obj.openConnection();
             postConnection.setRequestMethod("POST");
-            postConnection.setRequestProperty("authorization", "Your Own Key");
+            postConnection.setRequestProperty("authorization", "Your Own  Key");
             postConnection.setRequestProperty("cache-control", "no-cache");
             postConnection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
             postConnection.setDoOutput(true);
