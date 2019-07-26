@@ -16,8 +16,8 @@ import javax.activation.*;
 import java.net.UnknownHostException;
 public class SendEmail {
     public static void sendmail(String email,String msg,String sub){    
-   	        final String username = "bankingprojectjnu@gmail.com";
-		final String password = "bankingproject123@";
+   	        final String username = "Your Username";
+		final String password = "************";
                 try {
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
